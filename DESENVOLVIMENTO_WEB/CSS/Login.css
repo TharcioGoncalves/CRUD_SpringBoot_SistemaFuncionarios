@@ -1,0 +1,84 @@
+* {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #f0f2f5;
+}
+
+.conteiner {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   margin: 10px;
+}
+
+form {
+   background-color: white;
+   padding: 50px;
+   border-radius: 10px;
+   box-shadow: 0px 4px 15px rgb(0, 0, 0, 0.1);
+}
+
+h1 {
+   margin-bottom: 15px;
+   font-size: 30px;
+   font-weight: 500;
+}
+
+.campo {
+   width: 100%;
+   padding: 10px;
+   margin: 5px;
+   margin-bottom: 15px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-sizing: border-box;
+   outline: none;
+}
+
+.campo[type="submit"] {
+   cursor: pointer;
+}
+
+.campo[type="submit"]:hover {
+   background-color: rgb(1, 1, 231) !important;
+}
+
+h3 {
+   text-align: center;
+   font-weight: 500;
+   margin: 17px;
+   font-size: 16px;
+   color: rgb(128, 127, 127);
+}
+
+#entrar {
+   background-color: rgba(0, 0, 255, 0.938);
+   color: white;
+   width: 100%;
+}
+
+.esquecer {
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+   width: 100%;
+   gap: 8px;
+}
+
+.esqueceu {
+   display: block;
+   text-align: center;
+   color: blue;
+   text-decoration: none;
+   font-size: 15px;
+}
+
+.esqueceu:hover {
+   text-decoration: underline;
+}

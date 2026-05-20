@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/Dashboard.css">
+    <title>Dashboard</title>
+</head>
+
+<body class="bg-light">
+    <div class="top-information d-flex justify-content-between pt-3 px-4 pb-1 
+    align-items-center">
+        <h2 class="fs-5">Dashboard</h2>
+        <div class="dashboard-informations d-flex justify-content-between gap-2
+        align-items-center">
+            <input type="search" class="form-control w-100 py-1 px-2 rounded-1 fs-6"
+                placeholder="Buscar funcionário...">
+            <a href="#" class="text-dark notification-icon pointer"><i class="bi bi-bell"></i></a>
+        </div>
+    </div>
+    <div class="welcome-area pt-3 px-4 m-0">
+        <h2 class="m-0 mb-1">Bem-vindo Administrador</h2>
+        <p>Aqui está o resumo genial da sua empresa</p>
+    </div>
+    <div class="company-resume row mx-3">
+        <div class="col-12 col-sm-6 col-md-3 p-2">
+            <div class="resume shadow-sm bg-white rounded-1 p-3">
+                <h6 class="text-secondary m-0">Total Funcionários</h6>
+                <div class="counter d-flex justify-content-between align-items-center m-1">
+                    <p class="fw-bold fs-4 m-0">128</p>
+                    <i class="fa-solid fa-users fs-3" style="color:blue"></i>
+                </div>
+                <p class="area text-secondary m-0">Ativos</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 p-2">
+            <div class="resume shadow-sm bg-white rounded-1 p-3">
+                <h6 class="text-secondary m-0">Departamentos</h6>
+                <div class="counter d-flex justify-content-between align-items-center m-1">
+                    <p class="fw-bold fs-4 m-0">8</p>
+                    <i class="fa-solid fa-building fs-3" style="color: green;"></i>
+                </div>
+                <p class="area text-secondary m-0">Departamentos</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 p-2">
+            <div class="resume bg-white shadow-sm rounded-1 p-3">
+                <h6 class="text-secondary m-0">Cargos</h6>
+                <div class="counter d-flex justify-content-between align-items-center m-1">
+                    <p class="fw-bold fs-4 m-0">5</p>
+                    <i class="fa-solid fa-briefcase fs-3" style="color: blueviolet;"></i>
+                </div>
+                <p class="area text-secondary m-0">Cargos</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 p-2">
+            <div class="resume bg-white shadow-sm rounded-1 p-3">
+                <h6 class="text-secondary m-0">Folha Salarial(Mês)</h6>
+                <div class="counter d-flex justify-content-between align-items-center m-1">
+                    <p class="fw-bold fs-4 m-0"> 2.545.670 Kzs</p>
+                    <i class="fa-brands fa-cash-app"></i>
+                </div>
+                <p class="area text-secondary m-0">Total</p>
+            </div>
+        </div>
+    </div>
+    <div class="chart-div row m-3">
+        <div class="col-12 col-sm-6">
+            <div class="chart chart2 bg-white rounded-1 p-3 shadow-sm">
+                <h6>Funcionários por Departamento</h6>
+                <div class="graphics d-flex align-items-center mt-3">
+                    <canvas class="graphics d-flex align-items-center" id="myChart2"></canvas>
+                    <div class="color-list d-flex flex-column align-items-center p-0">
+                        <ul class="list-styled mx-3 p-0 colors my-auto gap-3 d-flex flex-column
+                        position-relative">
+                            <li class="d-flex gap-2 m-0 align-items-center">
+                                <span class="m-0" style="background-color: #3b82f6;"></span>
+                                <p class="m-0" style="width: 100px !important;">Recursos Humanos</p>
+                            </li>
+                            <li class="d-flex gap-2 align-items-center">
+                                <span class="m-0" style="background-color: #6b7280;"></span>
+                                <p class="m-0">Tecnologia</p>
+                            </li>
+                            <li class="d-flex gap-2 align-items-center">
+                                <span class="m-0" style="background-color: #10b981;"></span>
+                                <p class="m-0">Freelancers</p>
+                            </li>
+                            <li class="d-flex gap-2 align-items-center">
+                                <span class="m-0" style="background-color: #f59e0b;"></span>
+                                <p class="m-0">Operações</p>
+                            </li>
+                            <li class="d-flex gap-2 align-items-center">
+                                <span class="m-0" style="background-color: #8b5cf6;"></span>
+                                <p class="m-0">Administrativo</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="chart chart1 bg-white rounded-1 p-3 shadow-sm">
+                <div class="graphics">
+                    <canvas id="myChart1" class="w-100"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="recent-users bg-white rounded-1 m-4 p-3 pb-1 shadow-sm">
+        <h6>Contratações recentes</h6>
+        <ul class="list-unstyled mt-4 d-flex flex-column gap-2">
+            <li class="d-flex justify-content-between">
+                <h6 class="userName m-0">Thárcio Gonçalves</h6><span class="function m-0">Desenvolvedor</span><span
+                    class="date text-secondary m-0">14/05/2026</span>
+            </li>
+            <li class="d-flex justify-content-between">
+                <h6 class="userName m-0">Vivalda Gaspar</h6><span class="function m-0">Analista
+                    financeiro</span><span class="date text-secondary m-0">10/05/2026</span>
+            </li>
+            <li class="d-flex justify-content-between">
+                <h6 class="userName m-0">Viviane Ambrósio</h6><span class="function m-0">Associante
+                    administrativo</span><span class="date text-secondary m-0">05/05/2026</span>
+            </li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx1 = document.getElementById('myChart1');
+        const ctx2 = document.getElementById('myChart2');
+
+        new Chart(ctx1, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
+                datasets: [{
+                    label: 'Folha Salarial',
+                    data: [140000, 220000, 260000, 280000, 230000, 300000],
+                    borderWidth: 2,
+                    tension: 0.1,
+                    borderColor: "blue",
+                    backgroundColor: "blue",
+                    fill: false
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: "Folha Salarial (Últimos 6 Meses)",
+                        align: "start",
+                        font: { size: 13, weight: "bold" },
+                        color: "black",
+                        padding: {
+                            bottom: 20
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function (value) {
+                                return value / 1000 + "K"
+                            }
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 400000,
+                    }
+
+                }
+            }
+
+        });
+
+        new Chart(ctx2, {
+            type: 'pie',
+            data: {
+
+                datasets: [{
+
+                    data: [28, 34, 18, 24, 24],
+                    backgroundColor: [
+                        "#3b82f6",
+                        "#6b7280",
+                        "#10b981",
+                        "#f59e0b",
+                        "#8b5cf6"
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        display: false
+                    },
+                    x: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+    <script src="JS/"></script>
+</body>
+
+</html>
