@@ -7,14 +7,14 @@
     <title>LOGIN </title>
     <link rel="stylesheet" href="../CSS/Login.css">
 </head>
-
 <body>
 
     <main class="conteiner">
-        <form>
+        <form id="form">
             <h1>Gestão de Funcionários</h1>
 
             <h3>Faça login para continuar</h3>
+            <p id="erro" style="color: red;font-size: 12px; text-align: center;"></p>
             <label for="email">E-mail</label><br>
             <input class="campo" type="email" placeholder="E-mail" id="email" required><br>
             <label for="senha">Senha</label><br>
@@ -27,12 +27,13 @@
             <input id="entrar" class="campo" type="submit" value="Entrar">
 
             <div>
-                <a href="recuperar-senha" class="esqueceu">Esqueci minha senha</a>
+                <a href="#" class="esqueceu">Esqueci minha senha</a>
             </div>
 
         </form>
     </main>
 
+    <script src="../JS/Login.js"></script>
 </body>
 
 </html>

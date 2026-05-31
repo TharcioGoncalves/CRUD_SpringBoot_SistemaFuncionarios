@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+body{
+    overflow-x: hidden;
+}
+
+.side-bar{
+    background-color: #0f172a;
+}
+.side-bar li a{
+    display: inline-block;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+}
+.side-bar li a[href="#"]{
+    background-color: #1e293b;
+}
+.side-bar li a i, .side-bar li a span{
+    font-size: 13px !important;
+}
+.side-bar li a:hover{
+    background-color: #1e293b;
+}
 .welcome-area h2{
     font-size: 15px !important;
 }
@@ -5,17 +28,44 @@
 .welcome-area p{
     font-size: 11px !important;
 }
+#search-func{
+    font-size: 12px !important;
+    width: 200px !important;
+}
+.pdf:hover{
+    background-color: rgb(0, 110, 255);
+}
+#search-func::placeholder{
+    font-size: 12px !important;
+    display: flex;
+    align-items: center !important;
+    margin: 0 !important;
+}
+#search-func:focus{
+    outline: none;
+    border:1px solid #0f172a57;
+    box-shadow: none;
+}
 .company-resume h6{
     font-size: 11px !important;
 }
+.money-sign{
+    font-size: 8px !important;
+}
 .chart-div .chart .graphics #myChart1{
-    height: 225px !important;
+    height: 182px !important;
     position: relative;
     overflow: hidden;
 }
+.resume:hover{
+    transform:translateY(-7px);
+}
+.resume{
+    transition: transform 1s;
+}
 .chart-div .chart .graphics #myChart2{
-    height: 180px !important;
-    width: 180px !important;
+    height: 140px !important;
+    width: 140px !important;
 }
 .color-list{
     text-align: start;
@@ -30,36 +80,11 @@ p{
     font-size: 11px !important;
 }
 .color-list .colors p{
-    
     text-align: left !important;
     margin: 0 !important;
     padding: 0 !important;
 }
-.color-list .colors:nth-child(1) p::after{
-    content: "28";
-    position: absolute;
-    left: 160px;
-}
-.color-list .colors:nth-child(2) p::after{
-    content: "34";
-    position: absolute;
-    left: 160px;
-}
-.color-list .colors:nth-child(3) p::after{
-    content: "18";
-    position: absolute;
-    left: 160px;
-}
-.color-list .colors:nth-child(4) p::after{
-    content: "24";
-    position: absolute;
-    left: 160px;
-}
-.color-list .colors:nth-child(5) p::after{
-    content: "24";
-    position: absolute;
-    left: 160px;
-}
+
 .recent-users ul li, .recent-users ul li h6{
     font-size: 11px !important;
 }
@@ -68,4 +93,31 @@ p{
 }
 .chart-div .chart .graphics .colors li{
     justify-content: start !important;
+}
+#myChart2{
+    width: 50px !important;
+}
+.title-recent{
+    margin-bottom:12px !important;
+}
+.recent-data, .recent-data h6{
+    font-size: 11px;
+}
+.recent-data, .recent-data h6, .recent-data span{
+    padding: 2px !important;
+}
+hr{
+    margin: 5px;
+}
+.new-func {
+	width: 100px;
+	padding: 7px;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid #d5d1defe;
+	background-color: #2526eb;
+    text-align: center !important;
+}
+.new-func:hover{
+	background-color: #0606ab !important;
 }

@@ -1,100 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
 
-*{
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
+html,body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 	font-size: 12px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	height: 100%;
+	width: 100%;
 }
- body{
-	background-color:#f0f2f5;
-	padding:80px 40px;
+html{
+	height: 100% !important;
+	overflow-x: hidden;
 }
-h1{
+body {
+	background-color: #f0f2f5;
+	padding: 0;
+	height: 100vh;
+}
+
+.bar{
+	height: 100vh !important;
+}
+
+.side-bar {
+	background-color: #0f172a;
+	height: 100vh !important;
+
+}
+
+.side-bar li a {
+	display: inline-block;
+	width: 100% !important;
+	display: flex;
+	align-items: center;
+}
+
+.side-bar li a[href="#"] {
+	background-color: #1e293b;
+}
+
+.side-bar li a i,
+.side-bar li a span {
+	font-size: 13px !important;
+}
+
+.side-bar li a:hover {
+	background-color: #1e293b;
+}
+
+h1 {
 	font-size: 16px;
 }
-p{
-	margin-top: 1rem;	
+
+p {
+	margin-top: 10px;
 }
+
 .container {
-	margin-top: 1rem;
-  display: flex;
-  justify-content: space-between;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
 }
 
+table {
+	border-collapse: collapse;
+	padding: 10px;
+	width: 98%;
+	box-shadow: 0 2px 15px rgba(243, 243, 243, 0.1) !important;
+	margin-top: 20px;
+	border-radius: 4px !important;
+	position: relative;
+	overflow: hidden;
+}
 
-	
-table{
-	border-collapse:collapse;
-	padding:3rem;
-	width:100%;
-	box-shadow: 0 2px 15px rgb(0,0,0,0.1);
-	margin-top:2rem;
-	border-radius:0.5rem;
-}
-th{
-	padding:1.5rem;
-	background-color:#cdcdcefe;
-	text-align:center;
-}
-td{	border-collapse:collapse;
-	padding:1rem;
-	background-color:#fff;
+tr {
 	text-align: center;
-    }
+	position: relative;
+	padding: 10px;
+}
+
+th {
+	background-color: #f9fafb;
+	text-align: center;
+	padding: 10px;
+}
+
+td {
+	border-collapse: collapse;
+	background-color: #fff;
+	text-align: center;
+	justify-items: center;
+}
+
 .Status {
-		padding: 0.3rem 0.3rem;
-	background-color:#c0eec852;
-	border-radius:0.5rem;
-	border: 0.5px  solid rgb(95, 157, 95);
+	padding:2px;
+	background-color: #d1fae5;
+	border-radius: 4px;
+	border: 1px solid #92f0c4;
+	font-size: 10px;
+	font-weight: 460;
 }
 
+.sem-conteudo {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	padding: 20px;
+}
+table tr td p {
+	color: #065f46;
+}
 
- table tr td p {
-	color: green;
+.st {
+	width: 40px;
+	display: flex;
+	justify-content: center !important;
+	text-align: center;
 }
-.Statuss{
-		padding: 0.3rem 0.3rem;
-	background-color:oklch(98.038% 0.11021 108.294);
-	border-radius:0.5rem;
-	border: 0.5px  solid rgb(95, 157, 95);
-}
-.st{
-	width: 6rem;
-	height: 3rem;
 
-}
 input{
-	width: 35rem;
-	padding:1.5rem;
-	height: 2rem;
-	border-radius:0.5rem;
-	outline:none;
+	width: 240px;
+	padding: 7px;
+	border-radius: 4px;
+	outline: none;
 	border: 1px solid #d5d1defe;
-
 }
-a{
+
+a {
 	text-decoration: none;
-	color:#fff;
-	font-size: 1rem;
+	color: #fff;
+	font-size: 12px;
 }
-.bn{
-	width: 7rem;
-	border-radius:0.5rem;
-	padding:1rem;
-	outline:none;
-	margin-left: 1rem;
-	border: 1px solid #d5d1defe;	
-}
-.button{
-	width: 140px;
-	padding:10px;
-	height: 3rem;
-	border-radius: 0.5rem;
-	outline:none;
+
+.filtrar {
+	border-radius: 4px;
+	padding: 7px;
+	width: 80px;
+	outline: none;
+	margin-left: 5px;
 	border: 1px solid #d5d1defe;
-	background-color:#2526eb;
+	cursor: pointer;
+	font-weight: 505;
+	background-color: #e7e7e8;
+}
+	
+.update-table{
+	border-radius: 50%;
+	outline: none;
+	border: 0px solid;
+	color: #1e293b;
+	margin-left: 5px;
+}
+.update-table:hover{
+	background-color: #dde0e2;
+}
+.new-func {
+	width: 120px;
+	padding: 6px;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid #d5d1defe;
+	background-color: #2526eb;
+}
+.new-func:hover{
+	background-color: #0606ab;
+}
+.icones div {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
 }
 
+.icone-1 {
+	color: blue;
+	cursor: pointer;
+}
 
+.icone-2 {
+	color: red;
+	cursor: pointer;
+}
 
+.icone-1,
+.icone-2 {
+	font-size: 12px;
+}
+
+.icone-2:hover,
+.icone-1:hover {
+	opacity: 0.7;
+}
